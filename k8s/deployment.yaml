@@ -4,7 +4,7 @@ metadata:
   labels:
     app: vote-api
   name: vote-api
-  namespace: cats-vs-dogs
+  namespace: vote-example
 spec:
   replicas: 1
   selector:
