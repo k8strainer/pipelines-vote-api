@@ -4,7 +4,8 @@ metadata:
   labels:
     app: vote-api
   name: vote-api
-  namespace: vote-example
+  namespace: pipelines-tutorial
+  #namespace: vote-example
 spec:
   replicas: 1
   selector:
