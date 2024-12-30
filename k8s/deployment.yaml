@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: vote-api
-  name: vote-api
+  name: pipelines-vote-api
   namespace: pipelines-tutorial
   #namespace: vote-example
 spec:
