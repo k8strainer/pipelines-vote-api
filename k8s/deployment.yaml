@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: vote-api
+    app: pipelines-vote-api
   name: pipelines-vote-api
   namespace: pipelines-tutorial
   #namespace: vote-example
@@ -10,17 +10,17 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: vote-api
+      app: pipelines-vote-api
   template:
     metadata:
       labels:
-        app: vote-api
+        app: pipelines-vote-api
     spec:
       containers:
         #- image: quay.io/openshift-pipeline/vote-api:latest
         - image: image-registry.openshift-image-registry.svc:5000/pipelines-tutorial/pipelines-vote-api
           imagePullPolicy: Always
-          name: vote-api
+          name: pipelines-vote-api
           ports:
             - containerPort: 9000
               protocol: TCP
